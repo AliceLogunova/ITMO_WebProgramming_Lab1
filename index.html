@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пи Пу Пи Пу Пу</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="pictures/icon.ico" type="image/x-icon" />
+    <style>
+      header {
+        font-family: serif;
+        font-size: 12px;
+        color: #00ff00;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="js/script.js" async defer></script>
+    <header>
+      <h1>Логунова Алиса Андреевна P3221 Вариант 3111</h1>
+    </header>
+
+    <div id="error"></div>
+
+    <table class="main_tab">
+      <tr>
+        <td class="chart">
+          <object class="coordinates">
+            <img src="pictures/coordinates_negate.png" />
+          </object>
+          <form id="form" method="post">
+            <p id="coo_x" name="coo_x">
+              Введите значение координаты X
+              <input type="text" name="coo_x" placeholder="Координата X"/>
+            </p>
+            <p id="coo_y" name="coo_y">
+              Введите значение координаты Y
+              <input type="text" name="coo_y" placeholder="Координата Y"/>
+            </p>
+            <p>
+              Выберите значение радиуса (единичного отрезка) на графике
+              <select name="radius" id="radius">
+                <option value="1">1</option>
+                <option value="1.5">1.5</option>
+                <option value="2">2</option>
+                <option value="2.5">2.5</option>
+                <option value="3">3</option>
+              </select>
+            </p>
+            <p>
+              <button type="submit" name="submit"><b>Post</b></button>
+              <button id="clear_but" name="clear"><b>Clear</b></button>
+            </p>
+          </form>
+        </td>
+
+        <td class="table2">
+          <table id="param_tab">
+            <thead>
+              <tr>
+                <th>Координата X</th>
+                <th>Координата Y</th>
+                <th>Величина радиуса</th>
+                <th>Попадание в область</th>
+                <th>Время работы php-скрипта</th>
+                <th>Текущее время</th>
+              </tr>
+            </thead>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
